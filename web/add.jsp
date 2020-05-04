@@ -11,7 +11,7 @@
     <title>add</title>
 </head>
 <body>
-    <form action="/student" method="post">
+    <form action="/student?method=add" method="post">
         姓名：<input type="text" name="S_name"><br>
         性别：<input type="text" name="Ssex"><br>
         学号：<input type="text" name="S_no"><br>
