@@ -8,9 +8,15 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>$Title$</title>
+    <title>add</title>
 </head>
 <body>
-$END$
+    <form action="/student" method="post">
+        姓名：<input type="text" name="S_name"><br>
+        性别：<input type="text" name="Ssex"><br>
+        学号：<input type="text" name="S_no"><br>
+        班级号：<input type="text" name="Class_no"><br>
+        <input type="submit" value="添加">
+    </form>
 </body>
 </html>

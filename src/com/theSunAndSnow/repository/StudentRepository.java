@@ -52,6 +52,43 @@ public class StudentRepository {
         return list;
     }
 
+    public void add(String s_name, String ssex, String s_no, String class_no) {
+        Connection connection = null;
+        PreparedStatement preparedStatement = null;
+
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            String url = "jdbc:mysql://localhost:3306/study?useUnicode=true&characterEncoding=UTF-8";
+            String root = "root"; // 数据库用户名
+            String password = "18325379510"; // 数据库密码
+            connection = DriverManager.getConnection(url, root, password); // 建立数据库连接
+
+            String sql = "insert into student(S_no, Class_no, S_name, Ssex, S_birthday)" +
+                    "value (?, ?, ?, ?, ?);";
+            preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1, s_no);
+            preparedStatement.setString(2, class_no);
+            preparedStatement.setString(3, s_name);
+            preparedStatement.setString(4, ssex);
+            preparedStatement.setDate(5, new java.sql.Date(1));
+
+            preparedStatement.executeUpdate(); // 进行 INSERT
+
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                connection.close();
+                preparedStatement.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+
+        }
+    }
+
     public static void main(String[] args) {
         StudentRepository studentRepository = new StudentRepository();
         List<Student> list = studentRepository.findAll();

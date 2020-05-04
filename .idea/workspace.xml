@@ -7,7 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ce6154a-0ff1-4baf-a980-bb6164679b80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/theSunAndSnow/filter/CharacterFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/theSunAndSnow/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/theSunAndSnow/repository/StudentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/theSunAndSnow/servlet/StudentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/theSunAndSnow/servlet/StudentServlet.java" afterDir="false" />
@@ -77,12 +76,12 @@
           <entry key="java" value="6" />
           <entry key="jsp" value="2" />
           <entry key="sql" value="1" />
-          <entry key="student" value="1" />
+          <entry key="student" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Database Element" value="1" />
+          <entry key="Database Element" value="2" />
           <entry key="JAVA" value="6" />
           <entry key="JSP" value="2" />
           <entry key="PLAIN_TEXT" value="1" />
@@ -92,16 +91,16 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="10" />
-          <entry key="java" value="2618" />
+          <entry key="java" value="2692" />
           <entry key="jsp" value="387" />
-          <entry key="txt" value="60" />
+          <entry key="txt" value="72" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2617" />
+          <entry key="JAVA" value="2691" />
           <entry key="JSP" value="387" />
-          <entry key="PLAIN_TEXT" value="70" />
+          <entry key="PLAIN_TEXT" value="82" />
           <entry key="SQL" value="1" />
         </counts>
       </usages-collector>
@@ -109,11 +108,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/theSunAndSnow/repository/StudentRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+            <state relative-caret-position="412">
+              <caret line="74" selection-start-line="74" selection-end-line="74" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -124,7 +123,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/theSunAndSnow/filter/CharacterFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
+            <state relative-caret-position="155">
               <caret line="12" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -133,11 +132,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/theSunAndSnow/servlet/StudentServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="250">
-              <caret line="31" column="48" lean-forward="true" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+              <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -217,8 +216,8 @@
         <option value="$PROJECT_DIR$/src/com/theSunAndSnow/servlet/Add.java" />
         <option value="$PROJECT_DIR$/web/add.jsp" />
         <option value="$PROJECT_DIR$/src/com/theSunAndSnow/repository/StudentRepository.java" />
-        <option value="$PROJECT_DIR$/src/com/theSunAndSnow/servlet/StudentServlet.java" />
         <option value="$PROJECT_DIR$/src/com/theSunAndSnow/filter/CharacterFilter.java" />
+        <option value="$PROJECT_DIR$/src/com/theSunAndSnow/servlet/StudentServlet.java" />
       </list>
     </option>
   </component>
@@ -271,6 +270,13 @@
               <item name="ExerciseOne" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="theSunAndSnow" type="462c0819:PsiDirectoryNode" />
+              <item name="filter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExerciseOne" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExerciseOne" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="theSunAndSnow" type="462c0819:PsiDirectoryNode" />
               <item name="servlet" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -283,7 +289,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588607026373" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588607880934" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/standard.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -429,7 +435,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588598930346</updated>
-      <workItem from="1588598934323" duration="7945000" />
+      <workItem from="1588598934323" duration="8987000" />
     </task>
     <task id="LOCAL-00001" summary="完成 Student 的封装和从数据库中拿出student表中所有元组的方法">
       <created>1588602225646</created>
@@ -445,11 +451,18 @@
       <option name="project" value="LOCAL" />
       <updated>1588604243919</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加处理乱码问题的过滤器">
+      <created>1588607096189</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588607096189</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7945000" />
+    <option name="totallyTimeSpent" value="8987000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -466,7 +479,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Application Servers" />
       <window_info anchor="bottom" id="Database Console" weight="0.32899022" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32894737" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32790446" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Java Enterprise" />
@@ -511,7 +524,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="完成 Student 的封装和从数据库中拿出student表中所有元组的方法" />
     <MESSAGE value="完成查询数据库的网页展示功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成查询数据库的网页展示功能" />
+    <MESSAGE value="添加处理乱码问题的过滤器" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加处理乱码问题的过滤器" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -602,23 +616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://379b8686-1844-44a2-8d3c-c456b7554cd1/schema/study/table/student">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/theSunAndSnow/filter/CharacterFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/theSunAndSnow/entity/Student.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-749">
@@ -648,13 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/add.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -662,20 +652,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/theSunAndSnow/servlet/StudentServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/com/theSunAndSnow/repository/StudentRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="31" column="48" lean-forward="true" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+        <state relative-caret-position="412">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/theSunAndSnow/repository/StudentRepository.java">
+    <entry file="das://379b8686-1844-44a2-8d3c-c456b7554cd1/schema/study/table/student">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+        <state relative-caret-position="378">
+          <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/theSunAndSnow/filter/CharacterFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/theSunAndSnow/servlet/StudentServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
