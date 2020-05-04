@@ -1,6 +1,7 @@
 package com.theSunAndSnow.repository;
 
 import com.theSunAndSnow.entity.Student;
+import com.theSunAndSnow.util.JDBCTools;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -15,12 +16,8 @@ public class StudentRepository {
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            String url = "jdbc:mysql://localhost:3306/study?useUnicode=true&characterEncoding=UTF-8";
-            String root = "root"; // 数据库用户名
-            String password = "18325379510"; // 数据库密码
-            connection = DriverManager.getConnection(url, root, password); // 建立数据库连接
 
+            connection = JDBCTools.getConnection();
             String sql = "select * from student;";
             preparedStatement = connection.prepareStatement(sql);
             resultSet = preparedStatement.executeQuery(); // 进行 SELECT 查询
@@ -34,15 +31,11 @@ public class StudentRepository {
 
                     list.add(new Student(s_no, class_no, s_name, ssex, s_birthday));
             }
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
             try {
-                connection.close();
-                preparedStatement.close();
-                resultSet.close();
+                JDBCTools.release(connection, preparedStatement, resultSet);
             } catch (SQLException e) {
                 e.printStackTrace();
             }
@@ -57,11 +50,8 @@ public class StudentRepository {
         PreparedStatement preparedStatement = null;
 
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            String url = "jdbc:mysql://localhost:3306/study?useUnicode=true&characterEncoding=UTF-8";
-            String root = "root"; // 数据库用户名
-            String password = "18325379510"; // 数据库密码
-            connection = DriverManager.getConnection(url, root, password); // 建立数据库连接
+
+            connection = JDBCTools.getConnection(); // 建立数据库连接
 
             String sql = "insert into student(S_no, Class_no, S_name, Ssex, S_birthday)" +
                     "value (?, ?, ?, ?, ?);";
@@ -74,18 +64,14 @@ public class StudentRepository {
 
             preparedStatement.executeUpdate(); // 进行 INSERT
 
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
             try {
-                connection.close();
-                preparedStatement.close();
+                JDBCTools.release(connection, preparedStatement, null);
             } catch (SQLException e) {
                 e.printStackTrace();
             }
-
         }
     }
 
