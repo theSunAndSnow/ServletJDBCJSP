@@ -37,7 +37,8 @@ public class StudentServlet extends HttpServlet {
                     try {
                         Student student = studentRepository.findBySno(s_no2);
                         req.setAttribute("student", student); // 传递键值对student
-                        req.getRequestDispatcher("put.jsp").forward(req, resp);
+                        resp.sendRedirect("put.jsp");
+//                        req.getRequestDispatcher("put.jsp").forward(req, resp);
                     } catch (SQLException e) {
                         e.printStackTrace();
                     }

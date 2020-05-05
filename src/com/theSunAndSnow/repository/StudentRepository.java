@@ -78,7 +78,7 @@ public class StudentRepository {
 
     public static void deleteBySno(String s_no) {
         Connection connection = JDBCTools.getConnection();
-        String sql = "delete * form student where s_no = ?";
+        String sql = "delete from student where s_no = ?";
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, s_no);
