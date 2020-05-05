@@ -3,7 +3,6 @@ package com.theSunAndSnow.servlet;
 import com.theSunAndSnow.entity.Student;
 import com.theSunAndSnow.repository.StudentRepository;
 import com.theSunAndSnow.util.JDBCTools;
-import jdk.nashorn.internal.scripts.JD;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,7 +11,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
@@ -37,7 +35,6 @@ public class StudentServlet extends HttpServlet {
                     try {
                         Student student = studentRepository.findBySno(s_no2);
                         req.setAttribute("student", student); // 传递键值对student
-//                        resp.sendRedirect("put.jsp");
                         req.getRequestDispatcher("put.jsp").forward(req, resp);
                     } catch (SQLException e) {
                         e.printStackTrace();
