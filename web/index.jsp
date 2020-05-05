@@ -30,7 +30,7 @@
           <td>${student.getSsex()}</td>
           <td>${student.getS_birthday()}</td>
           <td>
-            <a href="/student?method=put?s_no=${student.getS_no()}">修改</a>
+            <a href="/student?method=put&s_no=${student.getS_no()}">修改</a>
             <a href="/student?method=delete&s_no=${student.getS_no()}">删除</a>
           </td>
         </tr>
