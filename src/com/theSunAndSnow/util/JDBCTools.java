@@ -1,29 +1,25 @@
 package com.theSunAndSnow.util;
 
+import com.mchange.v2.c3p0.ComboPooledDataSource;
+
 import java.sql.*;
 
 // 专门用来解决 数据库连接过程中的重复代码 问题
 public class JDBCTools {
-
-    private static String URL = "jdbc:mysql://localhost:3306/study?useUnicode=true&characterEncoding=UTF-8";
-    private static String ROOT = "root"; // 数据库用户名
-    private static String PASSWORD = "18325379510"; // 数据库密码
+    private static ComboPooledDataSource dataSource;
 
     static {
-        try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
+        dataSource = new ComboPooledDataSource("study");
     }
 
     public static Connection getConnection() {
+        Connection connection = null;
         try {
-            return DriverManager.getConnection(URL, ROOT, PASSWORD);
+            connection = dataSource.getConnection();
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return null;
+        return connection;
     }
 
     public static void release(Connection connection, Statement statement, ResultSet resultSet) throws SQLException {
